@@ -1,6 +1,9 @@
 # 1.3 CAPM
 #----------------------
 library(lubridate)
+library(readxl)
+library(xts)
+
 data_capm <- read_xlsx("./Assignment1/Data efficient_frontier_CAPM.xlsx")
 dates <- ymd(data_capm$Date)
 data_capm$Date <- dates
