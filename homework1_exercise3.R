@@ -121,3 +121,9 @@ orig_timeframe <- exercise_1.3(data_capm_xts,"1996-12/2001-11")
 second_timeframe <- exercise_1.3(data_capm_xts,"2002/2006")
 third_timeframe <- exercise_1.3(data_capm_xts,"2007/2011")
 fourth_timeframe <- exercise_1.3(data_capm_xts,"2011/2016")
+
+
+# for frequency table
+factor_betas <- cut(orig_timeframe$betas,breaks=seq(-2.5,2.5,0.25))
+table(factor_betas)
+
